@@ -1,0 +1,175 @@
+@charset 'UTF-8';
+.header {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background: url(../img/top/hero_top.jpg) no-repeat center
+    center/cover;
+}
+
+@media print, screen and (min-width: 768px) {
+    .header {
+        height: 400px;
+        padding-bottom: 0;
+    }
+}
+
+.logo {
+    width: 60px;
+    padding: 10px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .logo {
+        width: 110px;
+        padding: 20px;
+        left: 40px;
+    }
+}
+
+.catch-copy, .page-title {
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-family: 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN',
+    'HG 明朝 E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+    font-size: 6vw;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%) 
+}
+
+.catch-copy span, .page-title span {
+    border-bottom: 3px solid #fff;
+    padding-bottom: 4px;
+}
+
+@media print, screen and (min-width: 768px) {
+    .catch-copy, .page-title {
+        font-size: 50px;
+    }
+}
+
+.heading02 {
+    text-align: center;     /* 文字を中央揃えに */
+    font-size: 16px;        /* 文字サイズを16pxに */
+    font-weight: bold;      /* 文字を太字に */
+    color: #000;          /* 文字を黒に */
+    font-family: 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN',
+    'HG 明朝 E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+                            /* フォントの種類を指定 */
+    margin-bottom: 20px;    /* 下部分の外余白を20pxに */
+}
+
+@media print, screen and (min-width: 768px) {
+    .heading02 {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+.heading02 span {
+    border-bottom: 3px solid #000;
+                            /* 下部分の罫線 3px、実線、黒色に */
+    padding-bottom: 4px;    /* 下部分の余白を 4pxに */
+}
+
+.lead {
+    font-size: 14px;        /* 文字サイズを14pxに */
+    line-height: 2.0;       /* 行の高さをフォントサイズの2倍に */
+}
+
+@media print, screen and (min-width: 768px) {
+    .lead {
+        width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.btn {
+    display: block;         /* 表示形式をブロックに */
+    text-align: center;     /* 文字を中央揃えに */
+    width: 200px;           /* 要素の横幅を200pxに */
+    margin: 0 auto 60px;    /* 要素の外余白を上0、左右自動、下60pxに */
+    border: 2px solid #000;
+                            /* 罫線を2px、実線、黒色に */
+    text-decoration: none;  /* 文字の装飾をなしに */
+    padding: 13px 0 12px;   /* 要素の内余白を上13px、左右0、下12pxに */
+    font-weight: bold;      /* 文字を太字に */
+}
+
+@media print, screen and (min-width: 768px) {
+    .btn {
+        width: 400px;
+        padding: 20px 0;
+        font-size: 14px;
+    }
+}
+
+.footer {                   /* class='footer' の要素のスタイル指定 */
+    padding: 15px 10px;     /* 内余白を上下15px、左右10pxに */
+}
+
+@media print, screen and (min-width: 768px) {
+    .footer {
+        padding:30px 10px;
+    }
+}
+
+.copy {                     /* class='copy'の要素のスタイル指定 */
+    text-align: center;     /* 文字を中央揃えに */
+    font-size: 1.0rem;      /* 文字サイズを1remに */
+}
+
+.globalnav {
+    position: relative;
+    padding: 0 10px;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.globalnav li {
+    display: table-cell;
+    text-align: center;
+}
+
+.globalnav li:not(:first-child) {
+    border-left: 1px solid #000;
+}
+
+.globalnav li a {
+    font-size: 1.3rem;
+    display: block;
+    background: #fff;
+    text-decoration: none;
+    padding: 15px 0;
+}
+
+.globalnav li a:hover {
+    opacity: 1;
+}
+
+@media print, screen and (min-width: 768px) {
+    .globalnav li a:hover {
+        background: #000;
+        color: #fff;
+    }
+}
+
+.globalnav-list {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    border: 1px solid #000;
+}
