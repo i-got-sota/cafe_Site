@@ -12,8 +12,8 @@
   <link rel='stylesheet' href='assets/css/common.css'>
   <link rel='stylesheet' href='assets/css/top.css'>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7CD3CYVDW"></script>
-  <script>
+  <script type="text/plain" data-cookiescript="accepted" async src="https://www.googletagmanager.com/gtag/js?id=G-Y7CD3CYVDW"></script>
+  <script type="text/plain" data-cookiescript="accepted" >
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -28,9 +28,9 @@
             var cookie = cookies[i];
             var eqPos = cookie.indexOf("=");
             var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;domain=";
+            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=";
             /*below line is to delete the google analytics cookies. they are set with the domain*/
-            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;domain=" + location.hostname.replace(/^www\./i, "");
+            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=" + location.hostname.replace(/^www\./i, "");
         }
     }
     deleteAllCookies()
