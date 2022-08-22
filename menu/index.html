@@ -11,6 +11,30 @@
   <link rel='stylesheet' href='../assets/css/reset.css'>
   <link rel='stylesheet' href='../assets/css/common.css'>
   <link rel='stylesheet' href='../assets/css/menu.css'>
+  <script type="text/plain" data-category="advertising" async src="https://www.googletagmanager.com/gtag/js?id=G-Y7CD3CYVDW"></script>
+  <script type="text/plain" data-category="advertising">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y7CD3CYVDW');
+  </script>
+  <script>
+    console.log(document.cookie)
+    function deleteAllCookies(){
+        var cookies = document.cookie.split(";");
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i];
+            var eqPos = cookie.indexOf("=");
+            var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+
+                document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;domain=";
+                /*below line is to delete the google analytics cookies. they are set with the domain*/
+                document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;domain=" + location.hostname.replace(/^www\./i, "");
+        }
+    }
+  deleteAllCookies()
+  </script>
 </head>
 <body>
     <header class='header header-menu'>
